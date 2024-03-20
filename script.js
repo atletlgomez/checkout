@@ -12,9 +12,31 @@ function retrieve() {
   document.getElementById("box2").innerHTML = storeditem;
 }
 
+let counter = 0;
+
+
 function addCounter() {
-  let counter = 0;
-  for (let i = 0; i <= i -1; i++) {
-    console.log(counter += i);
+    counter++ 
+    document.getElementById("counter").style.display = "block";
+    console.log(counter);
+    document.getElementById('counter').innerHTML = counter;
+
   }
-}
+
+  function minusCounter() {
+    if (counter > 0) {
+    counter -- 
+    } 
+    
+    if (counter <= 0 ) {
+      document.getElementById("counter").style.display = "none";
+      
+    }
+    console.log(counter);
+    document.getElementById('counter').innerHTML = counter;
+
+  }
+
+  // function displayCounter (){
+  //   document.getElementById('counter').innerHTML = counter;
+  // }
