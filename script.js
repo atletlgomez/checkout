@@ -9,5 +9,12 @@ function save() {
 
 function retrieve() {
   const storeditem = localStorage.getItem("textfield");
-  document.getElementById("box2").innerHTML(`${storeditem}`);
+  document.getElementById("box2").innerHTML = storeditem;
+}
+
+function addCounter() {
+  let counter = 0;
+  for (let i = 0; i <= i -1; i++) {
+    console.log(counter += i);
+  }
 }
